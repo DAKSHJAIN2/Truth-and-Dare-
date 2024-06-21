@@ -1,0 +1,233 @@
+*
+{
+    margin: 2px;
+    padding: 0;
+}
+h1
+{
+    height: 100px;
+    width: 100%;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #053e31;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-weight: bold;
+} 
+input
+{
+    height: 40px;
+    width: 400px;
+    font-size: 3vw;
+    font-weight: bold;
+}
+#enter1
+{
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border: 2px white solid;
+    border-radius: 25px;
+}
+
+.players
+{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 180px;
+}
+
+.buttons
+{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+.output
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 700px;
+    height:200px;
+    background-color:black;
+    border: 3px black solid;
+    opacity: 0.5;
+    margin-left: 50px;
+    color: white;
+    font-size: 3vw;
+}
+
+.main
+{
+  width: 100%;
+  height:620px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url("back.jpeg");
+  background-size: cover;
+}
+#select1 
+{
+
+    background-image: url("true.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+#select2 
+{
+
+    background-image: url("dare.jpg");
+    background-size: cover;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+#para {
+    font-size: 2vw;
+}
+#next
+{
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border: 2px white solid;
+    border-radius: 25px;
+}
+#select1:hover,#select2:hover
+{
+ cursor: pointer;
+ border: 5px white solid;
+}
+#enter1:hover, #next:hover
+{
+ cursor: pointer;
+ border: 5px white solid;
+ font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+        height: auto;
+        padding: 10px;
+    }
+
+    input {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    #enter1, #next {
+        width: 80%;
+        height: 50px;
+        font-size: 4vw;
+    }
+
+    .players {
+        width: 90%;
+        font-size: 4vw;
+        margin-left: 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .output {
+        width: 90%;
+        font-size: 4vw;
+        margin-left: 0;
+    }
+
+    #select1, #select2 {
+        height: 100px;
+        width: 500px;
+    }
+
+    #para {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        height: 800px;
+        background-image: url("Texture.jpeg");
+        background-size: cover;
+    }
+    h1 {
+        font-size: 8vw;
+        width: 400px;
+        background-color: rgb(83, 15, 15);
+    }
+
+    input {
+        width: 90%;
+        font-size: 5vw;
+    }
+
+    #enter1, #next {
+        width: 90%;
+        height: 40px;
+        font-size: 5vw;
+    }
+
+    .players {
+        font-size: 5vw;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .output {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    #select1, #select2 {
+        height: 150px;
+        width: 200px;
+    }
+    #select1{
+        background-image: url("true.jpg");
+        background-size: cover;
+    }
+    #select2{
+        background-image: url("dare.jpg");
+        background-size: cover;
+        
+    }
+
+    #para {
+        
+        font-size: 5vw;
+    }
+}
